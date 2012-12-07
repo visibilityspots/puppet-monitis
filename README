@@ -1,0 +1,23 @@
+Deploying a the monitis agent for the monitor.us service using puppet.
+
+Supported CentOS 6 x86
+
+I packaged the monitis agent in an rpm package which is available on http://repository.visibilityspots.com.
+
+Example for node.pp manifest:
+
+node 'HOSTNAME' {
+  yumrepo { 'Visibilityspots':
+    baseurl  => 'http://repository.visibilityspots.com',
+    descr    => 'Visibilityspots repository',
+    enabled  => 1,
+    gpgcheck => 0
+  }
+  class {
+    'monitis':
+      mail      => 'THE EMAIL ADRES OF YOUR MONITOR.US ACCOUNT',
+      agentname => 'SPECIFIC NAME OF THE SERVER YOU WANT TO MONITOR';
+  }
+}
+
+Feel free to report issue's or comments.

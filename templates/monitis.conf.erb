@@ -1,0 +1,6 @@
+MONITISHOME <%= scope.lookupvar('monitis::homedir') %>
+LOGFILE     <%= scope.lookupvar('monitis::logfile') %>
+PIDFILE     <%= scope.lookupvar('monitis::pidfile') %>
+USEREMAIL   <%= scope.lookupvar('monitis::mail') %>
+AGENTNAME   <%= scope.lookupvar('monitis::agentname') %>
+USEHOST     <%= scope.lookupvar('monitis::usehost') %>
