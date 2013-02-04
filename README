@@ -20,4 +20,14 @@ node 'HOSTNAME' {
   }
 }
 
+Additionally you can add the api and secret key from your monitor.us account.
+
+  class {
+    'monitis':
+      mail      => 'THE EMAIL ADRES OF YOUR MONITOR.US ACCOUNT',
+      apikey    => 'THE APIKEY PROVIDED BY MONITOR.US (SETTINGS ON MONITOR.US)',
+      secretkey => 'THE SECRETKEY PROVIDED BY MONITOR.US (SETTINGS ON MONITOR.US)',
+      agentname => 'SPECIFIC NAME OF THE SERVER YOU WANT TO MONITOR';
+  }
+
 Feel free to report issue's or comments.

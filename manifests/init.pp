@@ -9,6 +9,8 @@ class monitis (
   $mail         = $monitis::params::useremail,
   $agentname    = $monitis::params::agentname,
   $usehost      = $monitis::params::usehost,
+  $apikey       = $monitis::params::apikey,
+  $secretkey    = $monitis::params::secretkey,
   $motd         = $monitis::params::motd,
 ) inherits monitis::params {
 
