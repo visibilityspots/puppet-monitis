@@ -5,6 +5,7 @@ class monitis (
   $pkg_name     = $monitis::params::pkg_name,
   $homedir      = $monitis::params::homedir,
   $logfile      = $monitis::params::logfile,
+  $loglevel     = $monitis::params::loglevel,
   $pidfile      = $monitis::params::pidfile,
   $mail         = $monitis::params::useremail,
   $agentname    = $monitis::params::agentname,

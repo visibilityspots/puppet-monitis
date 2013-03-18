@@ -1,5 +1,6 @@
 MONITISHOME <%= scope.lookupvar('monitis::homedir') %>
 LOGFILE     <%= scope.lookupvar('monitis::logfile') %>
+LOGLEVEL    <%= scope.lookupvar('monitis::loglevel') %>
 PIDFILE     <%= scope.lookupvar('monitis::pidfile') %>
 USEREMAIL   <%= scope.lookupvar('monitis::mail') %>
 AGENTNAME   <%= scope.lookupvar('monitis::agentname') %>
@@ -8,5 +9,5 @@ USEHOST     <%= scope.lookupvar('monitis::usehost') %>
 APIKEY      <%= scope.lookupvar('monitis::apikey') %>
 <% end %>
 <% if @secretkey %>
-SECRETKEY     <%= scope.lookupvar('monitis::secretkey') %>
+SECRETKEY   <%= scope.lookupvar('monitis::secretkey') %>
 <% end %>
