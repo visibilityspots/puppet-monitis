@@ -7,7 +7,7 @@ class monitis::params {
   $conffile     = '/etc/monitis/etc/monitis.conf'
   $homedir      = '/etc/monitis'
   $logfile      = '/etc/monitis/logs/monitis.log'
-  $loglevel     = '5'
+  $loglev       = '5'
   $pidfile      = '/etc/monitis/logs/monitis.pid'
   $useremail    = undef
   $agentname    = undef
