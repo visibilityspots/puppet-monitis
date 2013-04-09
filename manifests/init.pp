@@ -13,6 +13,7 @@ class monitis (
   $apikey       = $monitis::params::apikey,
   $secretkey    = $monitis::params::secretkey,
   $motd         = $monitis::params::motd,
+
 ) inherits monitis::params {
 
   if $motd {
