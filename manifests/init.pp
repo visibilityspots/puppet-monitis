@@ -12,9 +12,19 @@ class monitis (
   $usehost      = $monitis::params::usehost,
   $apikey       = $monitis::params::apikey,
   $secretkey    = $monitis::params::secretkey,
+<<<<<<< HEAD
 ) inherits monitis::params {
 
   motd::register{'monitis':}
+=======
+  $motd         = $monitis::params::motd,
+
+) inherits monitis::params {
+
+  if $motd {
+    motd::register{'monitis':}
+  }
+>>>>>>> github/master
 
   include monitis::install
   include monitis::config
