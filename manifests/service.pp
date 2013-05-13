@@ -1,13 +1,13 @@
 # Class: monitis::service
 #
-# Class which serviceures the monitis agent service
+# Class which controls the monitis agent service
 class monitis::service {
   service { 'monitis':
     ensure     => 'running',
     hasrestart => true,
-    restart    => '/etc/monitis/monitis.sh restart',
-    start      => '/etc/monitis/monitis.sh start',
-    status     => '/etc/monitis/monitis.sh status',
-    stop       => '/etc/monitis/monitis.sh stop';
+    restart    => "${monitis::homedir}/monitis.sh restart",
+    start      => "${monitis::homedir}/monitis.sh start",
+    status     => "${monitis::homedir}/monitis.sh status",
+    stop       => "${monitis::homedir}/monitis.sh stop";
   }
 }
