@@ -14,8 +14,5 @@ class monitis::params {
   $usehost      = 'https://174.37.16.80:443/fcgi-bin/agentgateway'
   $apikey       = undef
   $secretkey    = undef
-<<<<<<< HEAD
-=======
   $motd         = false
->>>>>>> github/master
 }
