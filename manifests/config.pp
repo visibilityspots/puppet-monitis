@@ -7,12 +7,6 @@ class monitis::config {
     group        => 'root',
     replace      => true,
     content      => template('monitis/monitis.conf.erb'),
-    notify       => Exec['restart monitis'];
-  }
-
-  exec { 'restart monitis':
-    subscribe       => File[ $::monitis::conffile ],
-    command         => '/etc/monitis/monitis.sh restart',
-    refreshonly     => true
+    notify       => Service['monitis'];
   }
 }

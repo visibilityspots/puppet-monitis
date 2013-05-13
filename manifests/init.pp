@@ -16,9 +16,11 @@ class monitis (
 
   motd::register{'monitis':}
 
-  include ::monitis::install
-  include ::monitis::config
+  include monitis::install
+  include monitis::config
+  include monitis::service
 
-  Class['::monitis::install'] ->
-  Class['::monitis::config']
+  Class['monitis::install'] ->
+  Class['monitis::config'] ->
+  Class['monitis::service']
 }
