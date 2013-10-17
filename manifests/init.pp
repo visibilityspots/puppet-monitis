@@ -1,6 +1,6 @@
 # Class: monitis
 #
-# Initialization class for the monitis agent
+# Initialization class for the monitis.us agent
 class monitis (
   $pkg_name     = $monitis::params::pkg_name,
   $homedir      = $monitis::params::homedir,
