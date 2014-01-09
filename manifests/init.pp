@@ -23,7 +23,7 @@ class monitis (
   include monitis::config
   include monitis::service
 
-  Class['monitis::install'] ->
+  Class["monitis::install"] ->
   Class['monitis::config'] ->
   Class['monitis::service']
 }
