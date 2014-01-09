@@ -26,4 +26,4 @@ class monitis (
   Class['monitis::install'] ->
   Class['monitis::config'] ->
   Class['monitis::service']
-
+}
