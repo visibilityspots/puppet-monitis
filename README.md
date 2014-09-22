@@ -20,7 +20,7 @@ Example for node.pp manifest:
   class {
     'monitis':
       mail      => 'THE EMAIL ADRES OF YOUR FREE MONITOR.US ACCOUNT',
-      agentname => 'SPECIFIC NAME OF THE SERVER YOU WANT TO MONITOR';
+      agentname => 'SPECIFIC NAME OF THE SERVER YOU WANT TO MONITOR BY MONITOR.US';
   }
 }
 ```
