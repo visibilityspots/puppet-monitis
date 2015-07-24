@@ -1,4 +1,4 @@
-# Puppet monitis
+# Puppet monitis [![Build Status](https://travis-ci.org/visibilityspots/puppet-monitis.svg?branch=master)](https://travis-ci.org/visibilityspots/puppet-monitis)
 
 Deploying a the monitis agent for the monitor.us service using puppet.
 
