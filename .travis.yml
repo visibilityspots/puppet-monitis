@@ -1,7 +1,7 @@
 sudo: false
 
 before_install:
-  - ln -s . jetty
+  - ln -s . monitis
 
 cache:
   - apt
@@ -16,7 +16,7 @@ rvm:
   - 1.9.3
 
 script:
-  - curl -s https://raw.githubusercontent.com/visibilityspots/ci-scripts/master/travis/puppet-module.sh | bash -s jetty development
+  - curl -s https://raw.githubusercontent.com/visibilityspots/ci-scripts/master/travis/puppet-module.sh | bash -s monitis development
 
 notifications:
   email:
